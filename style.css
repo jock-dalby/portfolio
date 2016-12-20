@@ -6,3 +6,16 @@
   height: 60px;
   background-color: #f5f5f5;
 }
+
+.social-icons {
+  height: 50px;
+  width: 50px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
