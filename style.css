@@ -1,3 +1,28 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-logo {
+  margin: 10px 0 5px 15px;
+  color: #65C966;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  border: 5px solid #65C966;
+  max-width: 250px;
+  margin: 10px auto;
+  vertical-align: middle;
+}
+
+.eda-pages {
+  margin: 20px 0;
+  border: 2px solid grey;
+}
+
 .footer {
   /* position: absolute; */
   bottom: 0;
@@ -5,6 +30,12 @@
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
+}
+
+#copyright,
+#address {
+  font-size: 0.8em;
+  margin: 0;
 }
 
 .social-icons {
