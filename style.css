@@ -35,6 +35,11 @@ text-decoration: none;
   margin-top: -60px;
 }
 
+.project-link {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 .eda-pages {
   margin: 20px 0;
   border: 2px solid grey;
