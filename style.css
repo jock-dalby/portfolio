@@ -21,7 +21,7 @@ h3 {
 }
 
 .nav li {
-  font-size: 1.2em;
+  font-size: 1.8em;
   margin-top: 5px;
 }
 
@@ -37,6 +37,7 @@ h3 {
 #main-logo {
   font-family: 'Lobster', cursive;
   margin: 5px 0 5px 30px;
+  font-size: 2em;
 }
 
 .contactDetails {
