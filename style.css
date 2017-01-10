@@ -5,13 +5,26 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #efefef;
+}
+
+
+h3 {
+  color: #1560bd;
+  font-family: 'Playfair Display', serif;
+}
+
 .navbar {
-  border-bottom: 2px solid grey;
+  background: #efefef;
+}
+#topCV {
+  background:
 }
 
 #main-logo {
-  margin: 10px 0 5px 15px;
-  color: #65C966;
+  font-family: 'Lobster', cursive;
+  margin: 10px 0 5px 30px;
 }
 
 #top-link:focus, #top-link:hover {
@@ -24,7 +37,7 @@ text-decoration: none;
 
 #profile-pic {
   border-radius: 50%;
-  border: 5px solid #65C966;
+  border: 1px solid #1560bd;
   max-width: 250px;
   margin: 10px auto;
   vertical-align: middle;
@@ -37,7 +50,19 @@ text-decoration: none;
 
 .project-link {
   text-align: center;
+}
+.project-link p{
   font-size: 1.5em;
+  color: #ec4f3c;
+  font-family: 'Playfair Display', serif;
+}
+
+.technologies {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 5px;
+  font-family: 'Playfair Display', serif;
 }
 
 .eda-pages {
