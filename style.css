@@ -38,11 +38,13 @@ hr {
 
 /* Used to help functionality of nav land on target */
 
-#portfolio-hr {
+#portfolio-hr,
+#edaFinalProject-hr {
   margin-bottom: -60px;
 }
 
-#portfolio {
+#portfolio,
+#edaFinalProject {
   padding-top: 60px;
 }
 
@@ -171,11 +173,13 @@ hr {
 
   /* Used to help functionality of nav land on target */
 
-  #portfolio-hr {
+  #portfolio-hr,
+  #edaFinalProject-hr {
     margin-bottom: -70px;
   }
 
-  #portfolio {
+  #portfolio,
+  #edaFinalProject {
     padding-top: 70px;
   }
 
