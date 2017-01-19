@@ -169,4 +169,16 @@ hr {
     margin-bottom: 15px;
   }
 
+  /* Used to help functionality of nav land on target */
+
+  #portfolio-hr {
+    margin-bottom: -70px;
+  }
+
+  #portfolio {
+    padding-top: 70px;
+  }
+
+  /****************/
+
 }
