@@ -15,6 +15,13 @@ h3 {
   font-family: 'Playfair Display', serif;
 }
 
+hr {
+  margin: 25px 0 5px 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 .navbar {
   background: #efefef;
   border-bottom: 0.5px solid #ec4f3c;
@@ -25,32 +32,26 @@ h3 {
   margin-top: 5px;
 }
 
-#topCV {
-  background: #ec4f3c;
-  border: none;
-  color: #efefef;
-  display: block;
-  width: 150px;
-  margin: 10px auto 0;
+#top-link:focus, #top-link:hover {
+  text-decoration: none;
 }
+
+/* Used to help functionality of nav land on target */
+
+#portfolio-hr {
+  margin-bottom: -60px;
+}
+
+#portfolio {
+  padding-top: 60px;
+}
+
+/****************/
 
 #main-logo {
   font-family: 'Lobster', cursive;
   margin: 5px 0 5px 30px;
   font-size: 2em;
-}
-
-.contactDetails {
-  color: #ec4f3c;
-  font-family: 'Playfair Display', serif;
-}
-
-#top-link:focus, #top-link:hover {
-text-decoration: none;
-}
-
-#main-content {
-  padding-top: 75px;
 }
 
 #profile-pic {
@@ -59,16 +60,32 @@ text-decoration: none;
   max-width: 250px;
   margin: 10px auto;
   vertical-align: middle;
+  box-shadow: 10px 10px 0 rgba(236, 79, 60, 0.7);
+}
+
+#top-cv {
+  background: #ec4f3c;
+  border: none;
+  color: #efefef;
+  display: block;
+  width: 150px;
+  margin: 10px auto 0;
+}
+
+#main-content {
+  padding-top: 75px;
 }
 
 .nav-anchors {
-  padding-top: 60px;
-  margin-top: -60px;
+  font-size: 2.5em;
+  text-decoration: underline;
+  margin-bottom: 20px;
 }
 
 .project-link {
   text-align: center;
 }
+
 .project-link p{
   font-size: 1.5em;
   color: #ec4f3c;
@@ -89,6 +106,20 @@ text-decoration: none;
   padding: 0;
 }
 
+.contact-details {
+  color: #ec4f3c;
+  font-family: 'Playfair Display', serif;
+}
+
+#social-links {
+  padding-top: 15px;
+}
+
+.social-icons {
+  height: 50px;
+  width: 50px;
+}
+
 .footer {
   /* position: absolute; */
   bottom: 0;
@@ -98,19 +129,6 @@ text-decoration: none;
   height: 60px;
   background-color: #f5f5f5;
   border-top: 2px solid grey;
-}
-
-#copyright,
-#address {
-  font-size: 0.8em;
-  margin: 0;
-  vertical-align: middle;
-  color: #337ab7;
-}
-
-.social-icons {
-  height: 50px;
-  width: 50px;
 }
 
 #footer-content {
@@ -125,9 +143,17 @@ text-decoration: none;
   text-align: right;
 }
 
+#copyright,
+#address {
+  font-size: 0.8em;
+  margin: 0;
+  vertical-align: middle;
+  color: #337ab7;
+}
+
 @media (min-width: 992px) {
 
-  #topCV {
+  #top-cv {
     display: inline;
     float: right;
     margin-right: 30px;
