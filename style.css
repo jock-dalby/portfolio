@@ -23,7 +23,6 @@ hr {
 
 #main-content {
   padding-top: 70px;
-  background: rgba(211, 211, 211, 0.8);
 }
 
 /* Nav */
@@ -76,11 +75,11 @@ hr {
 
 .profile-pic {
   border-radius: 50%;
-  border: 2px solid #1560bd;
+  border: 2px solid rgba(236, 79, 60, 0.7);
   max-width: 250px;
   margin: 10px auto;
   vertical-align: middle;
-  box-shadow: 10px 10px 0 rgba(236, 79, 60, 0.7);
+  box-shadow: 5px 5px 0 rgba(236, 79, 60, 0.7);
 }
 
 #profile-pic-large {
@@ -264,6 +263,10 @@ span.shake,
 /****** Media Queries START ******/
 
 @media (min-width: 992px) {
+
+  #main-content {
+    background: rgba(211, 211, 211, 0.8);
+  }
 
   #nav-logo {
     display: none;
