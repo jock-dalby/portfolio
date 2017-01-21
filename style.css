@@ -1,4 +1,4 @@
-
+/* Basic Styling */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,6 @@
 body {
   background: #efefef;
 }
-
 
 h3 {
   color: #337ab7;
@@ -22,9 +21,16 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+#main-content {
+  padding-top: 70px;
+  background: rgba(211, 211, 211, 0.8);
+}
+
+/* Nav */
+
 .navbar {
   background: #efefef;
-  border-bottom: 0.5px solid #ec4f3c;
+  border-bottom: 2px solid #337ab7;
 }
 
 .nav li {
@@ -32,7 +38,11 @@ hr {
   margin-top: 5px;
 }
 
-#top-link:focus, #top-link:hover {
+.navbar-default .navbar-nav>li>a {
+    color: #337ab7;
+}
+
+#nav-logo:focus, #nav-logo:hover {
   text-decoration: none;
 }
 
@@ -50,13 +60,21 @@ hr {
 
 /****************/
 
+#nav-logo,
 #main-logo {
   font-family: 'Lobster', cursive;
   margin: 5px 0 5px 30px;
   font-size: 2em;
+  color: #337ab7;
 }
 
-#profile-pic {
+/* Main content */
+
+#main-logo {
+  display: none;
+}
+
+.profile-pic {
   border-radius: 50%;
   border: 2px solid #1560bd;
   max-width: 250px;
@@ -65,17 +83,8 @@ hr {
   box-shadow: 10px 10px 0 rgba(236, 79, 60, 0.7);
 }
 
-#top-cv {
-  background: #ec4f3c;
-  border: none;
-  color: #efefef;
-  display: block;
-  width: 150px;
-  margin: 10px auto 0;
-}
-
-#main-content {
-  padding-top: 75px;
+#profile-pic-large {
+  display: none;
 }
 
 .nav-anchors {
@@ -86,6 +95,16 @@ hr {
 
 .project-link {
   text-align: center;
+}
+
+.project-link img,
+.social-icons {
+  transition: all .2s ease-in-out;
+}
+
+.project-link img:hover,
+.social-icons:hover {
+  transform: scale(1.05);
 }
 
 .project-link p{
@@ -115,6 +134,7 @@ hr {
 
 #social-links {
   padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .social-icons {
@@ -126,7 +146,6 @@ hr {
   /* position: absolute; */
   bottom: 0;
   width: 100%;
-  margin-top: 20px;
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
@@ -153,22 +172,131 @@ hr {
   color: #337ab7;
 }
 
+/****** Daft Punk START ******/
+
+span.shake,
+.shake.inline {
+	display:inline-block;
+}
+
+.shake {
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+/* Bigger */
+
+@-webkit-keyframes bigger {
+	50% { font-size: 1.2em }
+}
+
+#bigger {
+  color: #03bceb;
+}
+
+#bigger:hover,
+#bigger:focus {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: bigger;
+}
+
+/* Better */
+
+#better {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255,77,2,0.7);
+}
+
+@-webkit-keyframes better {
+	50% {
+    color: #ff4d02;
+    text-shadow: none;
+  }
+}
+
+#better:hover,
+#better:focus {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: better;
+}
+
+/* Faster */
+
+#faster {
+  color: #ed519b;
+}
+
+@-webkit-keyframes faster {
+	50% {
+    -webkit-transform: translate(-2px, 0px);
+  }
+}
+
+#faster:hover,
+#faster:focus {
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: faster;
+}
+
+/* Stonger */
+
+#stronger {
+  color: #a5cc3b;
+}
+
+@-webkit-keyframes stronger {
+  10%, 90% { font-weight: 500 }
+  20%, 80% { font-weight: 600 }
+  30%, 70% { font-weight: 700 }
+  40%, 60% { font-weight: 800 }
+	50% { font-weight: 900 }
+}
+
+#stronger:hover,
+#stronger:focus {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: stronger;
+}
+
+/****** Daft Punk END ******/
+
+/****** Media Queries START ******/
+
 @media (min-width: 992px) {
 
-  #top-cv {
-    display: inline;
-    float: right;
-    margin-right: 30px;
+  #nav-logo {
+    display: none;
   }
 
-  #profile-pic {
-    margin-top: 100px;
+  .profile-pic {
+    margin-top: 30px;
+  }
+
+  #profile-pic-small {
+    display: none;
+  }
+
+  #profile-pic-large {
+    display: block;
+    padding-top: 30px;
+  }
+
+  #profile-pic-large img{
+    margin-bottom: 30px;
   }
 
   #main-logo {
+    display: block;
+    text-align: center;
+  }
+
+  #main-logo h2 {
     font-size: 3em;
-    margin-left: 80px;
-    margin-bottom: 15px;
+  }
+
+  #main-logo p {
+    margin-top: -20px;
   }
 
   /* Used to help functionality of nav land on target */
@@ -183,6 +311,6 @@ hr {
     padding-top: 70px;
   }
 
-  /****************/
-
 }
+
+/****** Media Queries END ******/
