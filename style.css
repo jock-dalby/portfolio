@@ -183,22 +183,30 @@ span.shake,
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+  transform-origin:50% 50%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 /* Bigger */
 
 @-webkit-keyframes bigger {
-	50% { font-size: 2em }
+	50% { font-size: 1.2em }
+}
+
+@keyframes bigger {
+	50% { font-size: 1.2em }
 }
 
 #bigger {
   color: #03bceb;
 }
 
-#bigger:hover,
-#bigger:focus {
+#bigger {
   -webkit-animation-duration: 1s;
   -webkit-animation-name: bigger;
+  animation-duration: 1s;
+  animation-name: bigger;
 }
 
 /* Better */
@@ -215,10 +223,18 @@ span.shake,
   }
 }
 
-#better:hover,
-#better:focus {
+@keyframes better {
+	50% {
+    color: #ff4d02;
+    text-shadow: none;
+  }
+}
+
+#better {
   -webkit-animation-duration: 2s;
   -webkit-animation-name: better;
+  animation-duration: 2s;
+  animation-name: better;
 }
 
 /* Faster */
@@ -233,30 +249,47 @@ span.shake,
   }
 }
 
-#faster:hover,
-#faster:focus {
+@keyframes faster {
+	50% {
+    transform: translate(-5px, 0px);
+  }
+}
+
+#faster {
   -webkit-animation-duration: 0.2s;
   -webkit-animation-name: faster;
+  animation-duration: 0.2s;
+  animation-name: faster;
 }
 
 /* Stonger */
 
 #stronger {
   color: #a5cc3b;
+  font-weight: 900;
 }
 
 @-webkit-keyframes stronger {
-  10%, 90% { font-weight: 500 }
+  10%, 90% { font-weight: 750 }
   20%, 80% { font-weight: 600 }
-  30%, 70% { font-weight: 700 }
-  40%, 60% { font-weight: 800 }
-	50% { font-weight: 900 }
+  30%, 70% { font-weight: 450 }
+  40%, 60% { font-weight: 300 }
+	50% { font-weight: 150 }
 }
 
-#stronger:hover,
-#stronger:focus {
-  -webkit-animation-duration: 2s;
+@keyframes stronger {
+  10%, 90% { font-weight: 750 }
+  20%, 80% { font-weight: 600 }
+  30%, 70% { font-weight: 450 }
+  40%, 60% { font-weight: 300 }
+	50% { font-weight: 150 }
+}
+
+#stronger {
+  -webkit-animation-duration: 5s;
   -webkit-animation-name: stronger;
+  animation-duration: 5s;
+  animation-name: stronger;
 }
 
 /****** Daft Punk END ******/
@@ -314,6 +347,62 @@ span.shake,
   #edaFinalProject {
     padding-top: 70px;
   }
+
+  /****** Daft Punk START ******/
+
+  #bigger {
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+
+  #bigger:hover,
+  #bigger:focus {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: bigger;
+    animation-duration: 1s;
+    animation-name: bigger;
+  }
+
+  #better {
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+
+  #better:hover,
+  #better:focus {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: better;
+    animation-duration: 2s;
+    animation-name: better;
+  }
+
+  #faster {
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+
+  #faster:hover,
+  #faster:focus {
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-name: faster;
+    animation-duration: 0.2s;
+    animation-name: faster;
+  }
+
+  #stronger {
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+
+  #stronger:hover,
+  #stronger:focus {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: stronger;
+    animation-duration: 2s;
+    animation-name: stronger;
+  }
+
+  /****** Daft Punk END ******/
 
 }
 
