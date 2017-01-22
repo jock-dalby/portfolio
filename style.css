@@ -179,7 +179,8 @@ span.shake,
 }
 
 .shake {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  cursor: pointer;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
@@ -203,9 +204,10 @@ span.shake,
 }
 
 #bigger {
-  -webkit-animation-duration: 1s;
+  font-size: 1em;
+  -webkit-animation-duration: 2s;
   -webkit-animation-name: bigger;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: bigger;
 }
 
@@ -231,9 +233,9 @@ span.shake,
 }
 
 #better {
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 3s;
   -webkit-animation-name: better;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: better;
 }
 
@@ -270,25 +272,25 @@ span.shake,
 }
 
 @-webkit-keyframes stronger {
-  10%, 90% { font-weight: 750 }
-  20%, 80% { font-weight: 600 }
+  10%, 90% { font-weight: 150 }
+  20%, 80% { font-weight: 300 }
   30%, 70% { font-weight: 450 }
-  40%, 60% { font-weight: 300 }
-	50% { font-weight: 150 }
+  40%, 60% { font-weight: 600 }
+	50% { font-weight: 750 }
 }
 
 @keyframes stronger {
-  10%, 90% { font-weight: 750 }
-  20%, 80% { font-weight: 600 }
+  10%, 90% { font-weight: 150 }
+  20%, 80% { font-weight: 300 }
   30%, 70% { font-weight: 450 }
-  40%, 60% { font-weight: 300 }
-	50% { font-weight: 150 }
+  40%, 60% { font-weight: 600 }
+	50% { font-weight: 750 }
 }
 
 #stronger {
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 4s;
   -webkit-animation-name: stronger;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-name: stronger;
 }
 
@@ -357,9 +359,9 @@ span.shake,
 
   #bigger:hover,
   #bigger:focus {
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-name: bigger;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: bigger;
   }
 
@@ -370,9 +372,9 @@ span.shake,
 
   #better:hover,
   #better:focus {
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-name: better;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-name: better;
   }
 
@@ -396,9 +398,9 @@ span.shake,
 
   #stronger:hover,
   #stronger:focus {
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 4s;
     -webkit-animation-name: stronger;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-name: stronger;
   }
 
