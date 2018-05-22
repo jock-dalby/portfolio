@@ -35,7 +35,7 @@
       <find>mail@jock</find>
     </findStrings>
     <replaceStrings>
-      <replace>mail@jockdalby.com</replace>
+      <replace>jockdalby86@gmail.com</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
