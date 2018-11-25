@@ -74,12 +74,15 @@ hr {
 }
 
 .profile-pic {
-  border-radius: 50%;
   border: 2px solid rgba(236, 79, 60, 0.7);
   max-width: 250px;
   margin: 10px auto;
   vertical-align: middle;
   box-shadow: 5px 5px 0 rgba(236, 79, 60, 0.7);
+}
+
+.make-circle {
+  border-radius: 50%;
 }
 
 #profile-pic-large {
@@ -124,6 +127,10 @@ hr {
   margin: 20px 0;
   border: 2px solid grey;
   padding: 0;
+}
+
+.fix-height {
+  height: 339px;
 }
 
 .contact-details {
@@ -325,6 +332,10 @@ span.shake,
     margin-bottom: 30px;
   }
 
+  .hike-pic {
+    margin-top: 80px;
+  }
+
   #main-logo {
     display: block;
     text-align: center;
@@ -336,6 +347,12 @@ span.shake,
 
   #main-logo p {
     margin-top: -20px;
+  }
+
+  .blurb-headers {
+    font-family: 'Lobster', cursive;
+    color: #337ab7;
+    font-size: 1.2em;
   }
 
   /* Used to help functionality of nav land on target */
