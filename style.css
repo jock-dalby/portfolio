@@ -74,15 +74,12 @@ hr {
 }
 
 .profile-pic {
+  border-radius: 50%;
   border: 2px solid rgba(236, 79, 60, 0.7);
   max-width: 250px;
   margin: 10px auto;
   vertical-align: middle;
   box-shadow: 5px 5px 0 rgba(236, 79, 60, 0.7);
-}
-
-.make-circle {
-  border-radius: 50%;
 }
 
 #profile-pic-large {
@@ -127,6 +124,10 @@ hr {
   margin: 20px 0;
   border: 2px solid grey;
   padding: 0;
+}
+
+.eda-pages:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .fix-height {
